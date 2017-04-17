@@ -1,0 +1,43 @@
+#小白学习，Linux常用命令
+1、vim {filename}
+vim用来查看某个文件。vim也可以用来新建文件，vim 新文件名。
+  Esc退出编辑vim模式。
+  :q在vim中表示退出
+  :wq表示保存并退出
+  :q!表示强制不保存退出
+
+2、pwd
+查看当前目录的路径（绝对路径）
+
+3、mv {filename1} {filename2}
+将文件1移动为文件2，文件1不再存在
+
+4、cp {filename1} {filename2}
+将文件1复制一份为文件2，文件1仍然存在
+
+5、scp sourceIP:{filename} destinationIP:{filename}
+scp用以在两个linux主机之间复制文件/文件夹
+
+6、top
+top用来查看主机当前的系统状态，比如CPU、内存的使用等，进程的内存使用、cpu使用情况等，可以用top –h或者man top更详细的了解命令的用法以及具体的含义。同理别的命令也可以用同样的方式（-h或man）去看它的用法。
+
+7、pcs status
+pcs status用于查看使用pcs管理的那些进程的当前状态
+pcs resource enable {processname} 启动进程
+pcs resource disable {processname} 关闭进程
+更多用法使用-h查看
+
+8、netstat
+netstat主要用来查看跟网络相关的信息
+
+9、service {servicename} status/start/stop/restart
+service命令用于查看某个服务当前的状态、启动、停止、重启某个服务
+
+10、ps –ef|grep {processname}
+ps –ef可以查看进程的pid
+
+11、lsof –p {pid}
+lsof –p可用于查看某个进程（pid指定）打开的所有文件
+	
+12、mysql –u {username} –p {password} –h {host} –P {port}
+登录数据库
