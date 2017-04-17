@@ -1,0 +1,15 @@
+#小白学习中，Git常用命令
+
+git status 查看当前分支的状态
+git add {file} 添加修改的文件/文件夹
+git commit 提交
+git commit –amend 补充提交
+git review 提交到远程分支
+git checkout –b {branchname} {remotebranch} 新建一个分支
+git branch –a 查看所有分支
+git checkout {branchname} 切换分支
+git log 查看合并日志
+git reset –soft {commitId} 保持代码不变，退后到某次提交前
+git reset –hard {commitId} 退后到某次提交前，同时改变代码
+
+
