@@ -5,6 +5,7 @@ git add {file} 添加修改的文件/文件夹
 git commit 提交
 git commit –amend 补充提交
 git review 提交到远程分支
+git review -r origin master
 git checkout –b {branchname} {remotebranch} 新建一个分支
 git branch –a 查看所有分支
 git checkout {branchname} 切换分支
