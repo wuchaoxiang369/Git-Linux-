@@ -2,15 +2,21 @@
 
 git status 查看当前分支的状态
 git add {file} 添加修改的文件/文件夹
-git commit 提交
-git commit –amend 补充提交
+ git add -U 仅监控已经被add的文件（tracked文件），将被修改的文件提交到暂存区，不包括new
+ git add . 把所有的变化提交到暂存区，包括modified new，不包括delete
+ git add -A 把所有tracked和untracked的文件都提交
+git commit [-m message]提交
+git commit –amend 补充提交，不会产生新的commit
 git review 提交到远程分支
 git review -r origin master
 git checkout –b {branchname} {remotebranch} 新建一个分支
 git branch –a 查看所有分支
 git checkout {branchname} 切换分支
 git log 查看合并日志
-git reset –soft {commitId} 保持代码不变，退后到某次提交前
-git reset –hard {commitId} 退后到某次提交前，同时改变代码
-
-
+取消提交
+1.没有push的情况
+  git reset –soft {commitId} 保持代码不变，退后到某次提交前，不涉及index的回退
+  git reset –hard {commitId} 退后到某次提交前，同时改变代码
+  git reset -mixed 保留源码，只将git commit和index信息回退到某个版本。git reset默认形式
+2.已经push
+  git revert commit-id
