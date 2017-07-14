@@ -20,3 +20,6 @@ git log 查看合并日志
   git reset -mixed 保留源码，只将git commit和index信息回退到某个版本。git reset默认形式
 2.已经push
   git revert commit-id
+
+推荐一个网站：
+http://www.cnblogs.com/wzyxidian/p/5519429.html
