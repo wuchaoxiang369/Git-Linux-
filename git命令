@@ -13,6 +13,12 @@ git checkout –b {branchname} {remotebranch} 新建一个分支
 git branch –a 查看所有分支
 git checkout {branchname} 切换分支
 git log 查看合并日志
+git stash 将修改过的文件存储到git栈暂存，可以切换到其他分支工作.
+ git stash list 显示栈中的信息
+ git stash pop 弹出（使用）栈中最近一次的记录
+ git stash clear 清空栈中的内容
+ git stash apply stash@{n} 恢复到第n次的提交
+ git stash apply 不指定就默认是最近的一次
 取消提交
 1.没有push的情况
   git reset –soft {commitId} 保持代码不变，退后到某次提交前，不涉及index的回退
