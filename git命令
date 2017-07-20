@@ -27,5 +27,6 @@ git stash 将修改过的文件存储到git栈暂存，可以切换到其他分�
 2.已经push
   git revert commit-id
 
-推荐一个网站：
-http://www.cnblogs.com/wzyxidian/p/5519429.html
+推荐计个网站：
+1.http://www.cnblogs.com/lengyue0030/p/6390478.html
+2.http://www.cnblogs.com/wzyxidian/p/5519429.html
