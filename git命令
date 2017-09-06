@@ -19,6 +19,9 @@ git stash 将修改过的文件存储到git栈暂存，可以切换到其他分�
  git stash clear 清空栈中的内容
  git stash apply stash@{n} 恢复到第n次的提交
  git stash apply 不指定就默认是最近的一次
+* 如果不小心删除了git stash list中的记录，即执行了drop命令；此时git并没删除更改的东西，只是移除了对它的引用
+ 可以使用 git fsck 命令查看数据库中对象的连接和有效性；使用参数 --unreachable 显示出所有不可访问的对象。
+ 根据ID可以恢复 git stash list中的记录
 取消提交
 1.没有push的情况
   git reset –soft {commitId} 保持代码不变，退后到某次提交前，不涉及index的回退
