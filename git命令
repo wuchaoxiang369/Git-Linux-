@@ -35,6 +35,9 @@ git stash 将修改过的文件存储到git栈暂存，可以切换到其他分�
   git reset –soft {commitId} 保持代码不变，退后到某次提交前，不涉及index的回退
   git reset –hard {commitId} 退后到某次提交前，同时改变代码
   git reset -mixed 保留源码，只将git commit和index信息回退到某个版本。git reset默认形式
+  git reset -hard HEAD 退后到最新一次提交
+  git reset -hard HEAD^ 退后到上一次提交
+  git reset -hard HEAD^^ 退后到上上一次提交
 2.已经push
   git revert commit-id
 
