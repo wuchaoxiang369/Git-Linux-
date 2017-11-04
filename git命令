@@ -13,6 +13,12 @@ git checkout –b {branchname} [远程仓库名]/[分支名称] 新建一个分�
 git branch –a 查看所有分支
 git checkout {branchname} 切换分支
 git log 查看合并日志
+git rebase 变基
+ 变基是把当前分支修改的内容打包，它产生的结果是显得所有的操作像是在一条流水线上完成的
+ eg:
+	git checkout wcx;
+	git rebase master;
+	就是将wcx分支的修改打包，以基底分支(master)作为对象应用补丁
 git stash 将修改过的文件存储到git栈暂存，可以切换到其他分支工作.
  git stash list 显示栈中的信息
  git stash pop 弹出（使用）栈中最近一次的记录
