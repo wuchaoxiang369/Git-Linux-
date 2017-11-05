@@ -11,8 +11,8 @@ git review 提交到远程分支
 git review -r origin master
 git checkout –b {branchname} [远程仓库名]/[分支名称] 新建一个分支
 	git push origin {branchname} 这样远程仓库也有这个分支
-	git pull origin {origin_branc} 将远程分支与当前分支合并
-	git pull origing {origin_branch}:{branche} 将远程分支和本地分支合并  
+	git pull origin {origin_branch} 将远程分支与当前分支合并
+	git pull origing {origin_branch}:{branch} 将远程分支和本地分支合并  
 git branch –a 查看所有分支
 	想跟踪远程分支的信息可以用下面这个命令：设置以后可以直接使用git pull命令拉取最新的代码
 	git branch --set-upstream-to=origin/{branch} {localbranch}
