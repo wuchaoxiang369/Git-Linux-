@@ -1,4 +1,5 @@
 #小白学习中，Git常用命令
+
 从远程仓库clone一个项目的时候，Git自动将此项目命名为origin，并下载所有的数据，创建一个指向它的master的分支，在本地命名为origin/maser，但是无法在本地更改它的数据。接着，Git会在本地创建一个master的分支，始于origin上master分支相同的位置，并且都指向origin上的分支
 git status 查看当前分支的状态
 git add {file} 添加修改的文件/文件夹
@@ -11,8 +12,8 @@ git review 提交到远程分支
 git review -r origin master
 git checkout –b {branchname} [远程仓库名]/[分支名称] 新建一个分支
 	git push origin {branchname} 这样远程仓库也有这个分支
-	git pull origin {origin_branc} 将远程分支与当前分支合并
-	git pull origing {origin_branch}:{branche} 将远程分支和本地分支合并  
+	git pull origin {origin_branch} 将远程分支与当前分支合并
+	git pull origing {origin_branch}:{branch} 将远程分支和本地分支合并  
 git branch –a 查看所有分支
 	想跟踪远程分支的信息可以用下面这个命令：设置以后可以直接使用git pull命令拉取最新的代码
 	git branch --set-upstream-to=origin/{branch} {localbranch}
