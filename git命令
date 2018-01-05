@@ -3,7 +3,6 @@
 
 
 //test2
-//test1
 
 #小白学习中，Git常用命令
 从远程仓库clone一个项目的时候，Git自动将此项目命名为origin，并下载所有的数据，创建一个指向它的master的分支，在本地命名为origin/maser，但是无法在本地更改它的数据。接着，Git会在本地创建一个master的分支，始于origin上master分支相同的位置，并且都指向origin上的分支
