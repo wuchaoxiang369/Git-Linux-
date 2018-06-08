@@ -1,9 +1,3 @@
-
-//test3
-
-
-//test2
-
 #小白学习中，Git常用命令
 从远程仓库clone一个项目的时候，Git自动将此项目命名为origin，并下载所有的数据，创建一个指向它的master的分支，在本地命名为origin/maser，但是无法在本地更改它的数据。接着，Git会在本地创建一个master的分支，始于origin上master分支相同的位置，并且都指向origin上的分支
 git status 查看当前分支的状态
@@ -53,6 +47,15 @@ git remote show origin
   git reset -hard HEAD^^ 退后到上上一次提交
 2.已经push
   git revert commit-id
+
+本地项目要上传到github上：
+（1）需要先在github创建一个repository。
+（2）本地项目git init初始化本地仓库
+（3）git add代码添加到本地仓库
+（4）git commit -m ‘提交信息’
+（5）git remote add origin 新repository的git地址
+（6）git pull origin master。如果报错，可以用git pull origin master --allow-unrelated-histories
+（7）git push origin master
 
 推荐几个网站：
 http://www.cnblogs.com/lengyue0030/p/6390478.html
