@@ -57,7 +57,7 @@ git remote show origin
 （6）git pull origin master。如果报错，可以用git pull origin master --allow-unrelated-histories
 （7）git push origin master
 
-git配置语言：
+git配置语言(在~/.zshrc文件配置)：
 alias git='LANG=en_US.UTF-8 git'
 
 推荐几个网站：
